@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.select {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #023c40;
+	font-size: 16px;
+}
+
+.select__control {
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	cursor: default;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: 38px;
+	position: relative;
+	border: rgb(204, 204, 204) solid 1px;
+	border-radius: 4px;
+	transition: all 100ms ease 0s;
+	outline: 0px;
+}
+
+.select__value__container {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	flex: 1 1 0%;
+	padding: 2px 8px;
+	overflow: hidden;
+}
+
+.select__input {
+	outline: none;
+	border: none;
+	width: 100%;
+	height: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #023c40;
+	font-size: 16px;
+}
+
+.select__input::placeholder {
+	color: rgb(128, 128, 128);
+}
+
+.select__indicators {
+	align-items: center;
+	align-self: stretch;
+	display: flex;
+	flex-shrink: 0;
+	padding-right: 5px;
+}
+
+.select__indicator {
+	color: rgb(204, 204, 204);
+	font-size: 18px !important;
+	cursor: pointer;
+}
+
+.select__indicator--drop {
+	font-size: 24px !important;
+}
+
+.select__indicator--active {
+	color: rgb(128, 128, 128);
+}
+
+.select__indicator--separator {
+	align-self: center;
+	background-color: rgb(204, 204, 204);
+	width: 1px;
+	height: 20px;
+	margin-left: 5px;
+	margin-right: 3px;
+}
+
+.select__menu__container {
+	border-radius: 4px;
+	overflow: hidden;
+	margin-top: 5px;
+	background-color: #fff;
+	padding: 4px 0;
+	-webkit-box-shadow: 0px 0px 2px 0px rgb(182, 180, 180);
+	-moz-box-shadow: 0px 0px 2px 0px rgb(182, 180, 180);
+	box-shadow: 0px 0px 2px 0px rgb(182, 180, 180);
+}
+
+.select__menu {
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.select__menu__item {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	cursor: pointer;
+}
+
+.select__menu__item:hover {
+	background-color: #e4ece8;
+}
+
+.select__menu__item--placeholder {
+	justify-content: center;
+	color: rgb(128, 128, 128);
+}
+
+.select__menu__item--placeholder:hover {
+	background-color: #fff;
+}
