@@ -19,10 +19,15 @@
 
 .heading {
 	font-size: 32px;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 .select-container {
 	width: 500px;
 	flex-grow: 1;
+}
+
+.results {
+	margin-bottom: 20px;
+	font-weight: 500;
 }

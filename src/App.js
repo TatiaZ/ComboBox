@@ -25,6 +25,10 @@ function App() {
 				<h1 className="heading">ComboBox Demo</h1>
 			</header>
 			<div className="select-container">
+				<div className="results">
+					<p>Selected Value: {comboBoxValue}</p>
+					<p>Selected Text: {comboBoxText}</p>
+				</div>
 				<ComboBox
 					data={demoData}
 					placeholder={'Select...'}
